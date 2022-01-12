@@ -3,7 +3,7 @@
     $kdprdk = $_POST['kd'];
     $getdata = mysqli_query($koneksi, "SELECT * FROM menumkn WHERE kd='$kdprdk'");
     $rows = mysqli_num_rows($getdata);
-    $delete = "DELETE FROM menumkn WHERE kd = '$kd'";
+    $delete = "DELETE FROM menumkn WHERE kd = '$kdprdk'";
     $exedelete = mysqli_query($koneksi,$delete);
     $respose = array();
     if ($rows > 0) {
